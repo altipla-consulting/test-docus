@@ -2,11 +2,15 @@
   "name": "docus-starter",
   "scripts": {
     "dev": "docus dev",
-    "build": "docus build"
+    "build": "docus build",
+    "postinstall": "node scripts/patch.js"
   },
   "dependencies": {
     "docus": "latest",
     "better-sqlite3": "^11.10.0",
     "nuxt": "^3.17.6"
+  },
+  "pnpm": {
+    "neverBuiltDependencies": []
   }
 }
